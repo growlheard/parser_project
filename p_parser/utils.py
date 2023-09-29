@@ -12,7 +12,7 @@ def get_ad_previews(driver, url, region, time_period, advertiser_id):
     driver.get(url)
 
     # Прокрутка страницы
-    max_scroll_time = 3  # Максимальное время прокрутки в секундах
+    max_scroll_time = 60  # Максимальное время прокрутки в секундах
     start_time = time.time()
 
     while time.time() - start_time < max_scroll_time:
