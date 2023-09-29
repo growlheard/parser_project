@@ -2,7 +2,7 @@ import json
 import os
 from selenium import webdriver
 
-from p_parser.utils import download_previews, get_ad_previews
+from utils import download_previews, get_ad_previews
 
 
 def main():
