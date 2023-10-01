@@ -50,6 +50,10 @@ def main():
     # Получение данных объявлений
     combined_data = get_ad_previews(driver, url, region, time_period, advertiser_id)
 
+    
+    # Вывод количества объявлений
+    print(f"Получено {len(combined_data['ad_data'])} объявлений.")
+
     # Создание директории с именем advertiser_id
     os.makedirs(advertiser_id, exist_ok=True)
 
