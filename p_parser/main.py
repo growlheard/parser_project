@@ -8,8 +8,11 @@ from utils import download_previews, get_ad_previews
 def main():
     advertiser_id = "AR07328800802254880769"
 
+    chrome_driver_path = r'путь_к_\parser_project-master\p_parser\chromedriver.exe'
+    service = Service(chrome_driver_path)
+
     # Создание экземпляра веб-драйвера Selenium
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(service=service)
 
     # Загрузка списка стран и их значений из файла country_codes.json
     with open("country_codes.json") as json_file:
